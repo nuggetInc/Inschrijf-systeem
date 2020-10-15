@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="inschrijfSysteem.js"></script>
+    <title>inschrijf systeem</title>
+</head>
+
+<body>
+    <section id="select">
+        <h1 class="titel">Kies de spelers.</h1>
+        <div>
+            <ul id="inputfields" class="inputfields">
+
+            </ul>
+            <a class="start" onclick="StartTournament()">Start Tournament</a>
+        </div>
+    </section>
+    <section id="versus" style="display: none;">
+        <div class="kleuren">
+            <div id="kleur1" class="kleur1"></div>
+            <div id="kleur2" class="kleur2"></div>
+        </div>
+        <div id="balk" class="balk"></div>
+        <div class="namen">
+            <h2 id="player1" class="player1">Player1</h2>
+            <h2 id="player2" class="player2">Player2</h2>
+        </div>
+        <a class="winner1" onclick="Victory(0)">WINNAAR</a><a class="winner2" onclick="Victory(1)">WINNAAR</a>
+    </section>
+    <section id="winscreen" style="display: none;">
+        <h1 id="winner" class="winner">Player1</h1>
+        <h2 id="winScore" class="winScore">0</h2>
+        <p id="allScores" class="allScores">Player1: 0</p>
+    </section>
+</body>
+
+</html>

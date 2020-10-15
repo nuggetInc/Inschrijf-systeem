@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.titel {
+    margin-top: 20px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.inputfields {
+    position: relative;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inputfields .text {
+    font-size: 25px;
+    margin: 10px 10px 0 10px;
+    padding: 15px;
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    background-color: black;
+    color: white;
+}
+
+.inputfields .color {
+    margin: 0 10px 10px 10px;
+    width: 230px;
+    height: 20px;
+    outline: none;
+    border-style: none solid solid solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+.inputfields .color::-webkit-color-swatch-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.start {
+    position: relative;
+    display: block;
+    font-size: 25px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+
+    text-align: center;
+    left: calc(50% - 10px);
+    transform: translateX(-50%);
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+
+    background-color: black;
+    color: white;
+}
+
+.balk {
+    position: fixed;
+    background-color: white;
+    width: 40px;
+    height: 120vh;
+    
+    left: calc(50% - 20px);
+    margin-top: -10vh;
+    transform: translateX(-50%);
+    transform: rotate(10deg);
+}
+
+.namen {
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
+.namen h2 {
+    display: inline;
+}
+
+.player1 {
+    position: relative;
+    font-size: 100px;
+    color: white;
+    left: 10%;
+    animation-timing-function: ease-out;
+}
+
+.player2 {
+    position: relative;
+    font-size: 100px;
+    color: white;
+    float: right;
+    right: 10%;
+}
+
+.kleuren {
+    display: inline;
+}
+
+.kleur1 {
+    position: fixed;
+    width: 100vw;
+    height: 140vh;
+    right: 50vw;
+    background-color: blue;
+
+    margin-top: -20vh;
+    transform: rotate(10deg);
+}
+
+.kleur2 {
+    position: fixed;
+    width: 100vw;
+    height: 140vh;
+    left: 50vw;
+    background-color: red;
+
+    margin-top: -20vh;
+    transform: rotate(10deg);
+}
+
+.winner1 {
+    position: fixed;
+    left: 10vw;
+    bottom: 10vh;
+    font-size: 5vw;
+    display: inline;
+    color: white;
+}
+
+.winner2 {
+    position: fixed;
+    right: 10vw;
+    bottom: 10vh;
+    font-size: 5vw;
+    display: inline;
+    color: white;
+}
+
+.winner {
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+.winScore {
+    position: absolute;
+    color: white;
+    font-size: 75px;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, 75px);
+}
+
+.allScores {
+    position: fixed;
+    color: white;
+    font-size: 40px;
+    left: 10px;
+    top: 10px;
+}
